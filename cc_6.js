@@ -17,3 +17,16 @@ class Employee {
 const emp1 = new Employee("Alice", "Marketing");
 console.log(emp1.describe()); // Alice works in the Marketing department.
 
+// Step 3: Create Manager Class 
+
+class Manager extends Employee {
+    constructor(name, department, teamSize) {
+        super(name, department);
+        this.teamSize = teamSize;
+    }
+    describe() {
+        return `$(this.name} manages the ${this.department} department and leads a team of ${this.teamSize} people.`;
+    }
+    }
+
+    
