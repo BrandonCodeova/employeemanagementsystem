@@ -35,6 +35,22 @@ class Manager extends Employee {
     const emp2 = new Employee("Ian", "Operations");
     const mgr1 = new Manager("Sarah", "Product Development", 5);
 
+    // Step 5: Create COmpany Class
+
+    class Company{
+        constructor() {
+            this.employees = [];
+         }
+         addEmployee(employee) {
+            this.employees.push(employee);
+         }
+         listEmployees() {
+            this.employees.forEach(emp => {
+                console.log(emp.describe());
+            });
+         }
+    }
     
+
 
     
