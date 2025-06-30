@@ -28,5 +28,13 @@ class Manager extends Employee {
         return `${this.name} manages the ${this.department} department and leads a team of ${this.teamSize} people.`;
     }
     }
+ 
+    //Step 4: Create Sample Empoyees and Managers
+
+    const emp1 = new Employee("Nicole", "Product Development");
+    const emp2 = new Employee("Ian", "Operations");
+    const mgr1 = new Manager("Sarah", "Product Development", 5);
+
+    
 
     
