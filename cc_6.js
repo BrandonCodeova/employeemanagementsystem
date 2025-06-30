@@ -12,11 +12,6 @@ class Employee {
     }
 } 
 
-// Quick test:
-
-const emp1 = new Employee("Alice", "Marketing");
-console.log(emp1.describe()); // Alice works in the Marketing department.
-
 // Step 3: Create Manager Class 
 
 class Manager extends Employee {
@@ -29,7 +24,7 @@ class Manager extends Employee {
     }
     }
  
-    //Step 4: Create Sample Empoyees and Managers
+    //Step 4: Create Sample Employees and Managers
 
     const emp1 = new Employee("Nicole", "Product Development");
     const emp2 = new Employee("Ian", "Operations");
@@ -50,7 +45,12 @@ class Manager extends Employee {
             });
          }
     }
-    
+     
+    //Step 6: Instantiate the Company and Add Employees
 
+    const myCompany = new Company();
+    myCompany.addEmployee(emp1);
+    myCompany.addEmployee(emp2);
+    myCompany.addEmployee(mgr1);
 
-    
+    myCompany.listEmployees();
